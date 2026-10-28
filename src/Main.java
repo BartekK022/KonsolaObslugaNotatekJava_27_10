@@ -17,8 +17,8 @@ public class Main {
         System.out.println("Podaj tresc drugiej notatki: ");
         stringTrescNotatki = scanner.nextLine();
         Notatka notatka1 = new Notatka(stringTytulNotatki, stringTrescNotatki);
-        notatka.wyswietlTytulITresc();
-        notatka.wypiszZawartosc();
+        notatka1.wyswietlTytulITresc();
+        notatka1.wypiszZawartosc();
 
 
     }
