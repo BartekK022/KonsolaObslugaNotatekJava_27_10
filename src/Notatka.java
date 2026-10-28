@@ -1,6 +1,6 @@
 public class Notatka {
-    private int licznikNotatek;
-    private int  id;
+    private static int licznikNotatek;
+    private int id;
     protected String tytulNotatki;
     protected String trescNotatki;
 
@@ -11,8 +11,17 @@ public class Notatka {
         licznikNotatek++;
         id = licznikNotatek;
     }
-    public static void wyswietlTytulITresc(){
-        
+
+    public void wyswietlTytulITresc() {
+        String stringTytul = tytulNotatki;
+        String stringTresc = trescNotatki;
+        System.out.println("Tytuł: " + stringTytul + " treść: "
+                + stringTresc);
+    }
+
+    public void wypiszZawartosc() {
+        System.out.println(licznikNotatek + "; " + id + "; "
+                + tytulNotatki + "; " + trescNotatki + "; ");
 
     }
 }
