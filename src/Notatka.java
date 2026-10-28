@@ -1,6 +1,6 @@
 public class Notatka {
     private static int licznikNotatek;
-    private int id;
+    private int id = 0;
     protected String tytulNotatki;
     protected String trescNotatki;
 
